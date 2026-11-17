@@ -1,0 +1,222 @@
+:root {
+  color-scheme: light;
+  --paper: #eee9de;
+  --ink: #12282e;
+  --sea: #0c2b32;
+  --sea-2: #16353a;
+  --sand: #d9c4a0;
+  --sand-card: #e7d4b5;
+  --muted: #657176;
+  --line: rgb(18 40 46 / 14%);
+  --sans: "DM Sans", "Manrope", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 20px; }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; }
+img { display: block; max-width: 100%; }
+a:focus-visible, button:focus-visible { outline: 2px solid #aebd72; outline-offset: 4px; }
+.visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
+.content-width { width: min(1480px, 74%); margin-inline: auto; }
+
+.hero { position: relative; overflow: hidden; background: #4a4b49; line-height: 0; }
+.hero-art { width: 100%; height: auto; }
+.hero-hotspots { position: absolute; inset: 0; }
+.hero-hotspots a { position: absolute; top: 3.2%; height: 7%; }
+.hotspot-brand { left: 3.5%; width: 16%; }
+.hotspot-discover { left: 37.5%; width: 5.5%; }
+.hotspot-beaches { left: 45%; width: 5%; }
+.hotspot-culture { left: 52.3%; width: 5%; }
+.hotspot-agenda { left: 59.5%; width: 5%; }
+.hotspot-visit { right: 3%; width: 11%; }
+.hero-hotspots a:focus-visible { background: rgb(255 255 255 / 18%); outline-offset: -3px; }
+.mobile-header { display: none; }
+
+.paper-section { background: var(--paper); }
+.introduction { padding: clamp(72px, 8vw, 116px) 0 clamp(58px, 7vw, 98px); }
+.intro-grid { display: grid; grid-template-columns: .75fr 1fr; gap: 12%; align-items: center; padding-bottom: 52px; border-bottom: 1px solid var(--line); }
+.eyebrow { margin: 0 0 16px; font-size: 9px; font-weight: 800; letter-spacing: .18em; line-height: 1.4; text-transform: uppercase; color: #42626a; }
+.intro-heading h2, .ways-heading h2, .beaches-heading h2, .culture-heading h2 { margin: 0; font-size: clamp(36px, 4.2vw, 56px); font-weight: 800; letter-spacing: -.075em; line-height: .96; }
+.intro-copy { max-width: 440px; margin: 10px 0 0; font-size: 14px; line-height: 1.75; color: #536269; }
+
+.city-facts { display: grid; grid-template-columns: repeat(3, 1fr); gap: 38px; padding-top: 30px; padding-bottom: 48px; }
+.city-facts article { max-width: 285px; }
+.city-facts h3, .costume-notes h3, .culture-notes h3 { margin: 0 0 8px; font-size: 9px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.city-facts p { margin: 0; color: #536269; font-size: 11px; line-height: 1.6; }
+
+.ways-heading { display: flex; justify-content: space-between; align-items: end; margin-bottom: 21px; }
+.ways-heading .eyebrow { margin-bottom: 7px; }
+.ways-heading h2 { font-size: clamp(24px, 2.4vw, 32px); letter-spacing: -.055em; }
+.ways-hint { color: #7d8583; font-size: 8px; }
+.ways-hint span { padding-left: 8px; }
+.feature-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+.feature-card { height: 260px; position: relative; display: flex; flex-direction: column; justify-content: end; overflow: hidden; padding: 15px; color: white; background: #52666a; }
+.feature-card::after { position: absolute; inset: 0; content: ""; background: linear-gradient(180deg, rgb(5 20 24 / 25%) 0%, rgb(5 20 24 / 8%) 35%, rgb(5 20 24 / 82%) 100%); transition: background .25s ease; }
+.feature-card img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: left center; filter: grayscale(.85); transition: transform .45s ease, filter .45s ease; }
+.feature-food img { object-position: 52% 54%; }
+.feature-card:hover img { filter: grayscale(.35); transform: scale(1.05); }
+.feature-card > span { position: relative; z-index: 1; }
+.feature-meta { display: flex; justify-content: space-between; margin-bottom: auto; font-size: 7px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; }
+.feature-meta span { opacity: .8; }
+.feature-title { min-height: 38px; font-size: 17px; font-weight: 800; letter-spacing: -.04em; line-height: 1.1; }
+.feature-link { display: flex; justify-content: space-between; border-top: 1px solid rgb(255 255 255 / 40%); margin-top: 10px; padding-top: 9px; font-size: 7px; letter-spacing: .12em; text-transform: uppercase; }
+.feature-link span { font-size: 13px; line-height: 8px; }
+
+.essential { min-height: 118px; margin-top: 32px; padding: 20px 34px; display: flex; justify-content: space-between; align-items: center; gap: 20px; background: #193840; color: white; }
+.essential .eyebrow { margin-bottom: 8px; color: #9eb4b6; }
+.essential-copy { max-width: 600px; margin: 0; font-size: 15px; font-weight: 700; line-height: 1.4; }
+.pill { min-height: 34px; padding: 0 18px; display: inline-flex; align-items: center; justify-content: center; gap: 16px; border-radius: 999px; font-size: 8px; font-weight: 800; letter-spacing: .11em; text-transform: uppercase; white-space: nowrap; transition: background .2s, color .2s, border-color .2s; }
+.pill-outline { border: 1px solid rgb(255 255 255 / 38%); color: white; }
+.pill-outline:hover { background: var(--paper); border-color: var(--paper); color: var(--sea); }
+
+.beaches { padding: clamp(75px, 8vw, 115px) 0 76px; background: var(--sea); color: #f3f0e9; }
+.beaches-heading { display: grid; grid-template-columns: 1fr .75fr; gap: 12%; align-items: end; padding-bottom: 36px; border-bottom: 1px solid rgb(235 239 229 / 18%); }
+.beaches .eyebrow { color: #9bb9bb; }
+.beaches-heading h2 { font-size: clamp(38px, 4.4vw, 58px); }
+.beaches-heading > p { margin: 0 0 4px; color: #b6c0bd; font-size: 11px; line-height: 1.7; }
+.beach-row { display: grid; grid-template-columns: 1.15fr 1fr; gap: 36px; align-items: center; padding: 30px 0; border-bottom: 1px solid rgb(235 239 229 / 16%); }
+.beach-image-wrap { position: relative; aspect-ratio: 1.58; overflow: hidden; background: #324c50; }
+.beach-image-wrap > img { width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+.beach-image-wrap:hover > img { transform: scale(1.025); }
+.image-map-link { position: absolute; right: 2.5%; bottom: 6%; width: 30%; height: 9%; min-height: 24px; display: flex; align-items: center; justify-content: center; gap: 9px; border-radius: 999px; background: #203239; color: #f4f0e6; font-size: 7px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.image-map-link:hover { background: #f4f0e6; color: #193840; }
+.beach-info { padding: 3px 0; }
+.beach-label { display: flex; justify-content: space-between; padding-bottom: 9px; border-bottom: 1px solid rgb(235 239 229 / 17%); color: #9eb5b6; font-size: 8px; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+.beach-label span:last-child { color: #70878a; }
+.beach-info h3 { margin: 18px 0 8px; font-size: clamp(23px, 2.5vw, 32px); font-weight: 800; letter-spacing: -.055em; line-height: 1.1; }
+.beach-info > p { max-width: 430px; margin: 0; color: #c1cbc7; font-size: 11px; line-height: 1.65; }
+.beach-info .route-note { margin: 15px 0 16px; padding-left: 14px; border-left: 2px solid #77989a; color: #aab9b6; font-size: 9px; }
+.map-pill { min-height: 28px; padding-inline: 14px; background: var(--paper); color: #20363a; font-size: 7px; }
+.map-pill:hover { background: #c8d3ad; }
+.beaches-footnote { margin: 24px 0 0; color: #82999a; font-size: 8px; line-height: 1.6; }
+
+.culture { padding: clamp(76px, 8vw, 108px) 0 65px; background: var(--sand); color: #28251f; }
+.culture-heading { max-width: 660px; margin-bottom: 42px; }
+.culture-heading .eyebrow { color: #66583f; }
+.culture-heading h2 { font-size: clamp(37px, 4.3vw, 57px); }
+.culture-heading > p:last-child { max-width: 510px; margin: 16px 0 0; color: #635b4c; font-size: 11px; line-height: 1.7; }
+.food-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 14px; }
+.food-card { min-height: 300px; position: relative; display: flex; flex-direction: column; align-items: stretch; padding: 20px; background: var(--sand-card); transition: transform .25s ease, box-shadow .25s ease; }
+.food-card:hover { transform: translateY(-4px); box-shadow: 0 12px 25px rgb(68 51 24 / 10%); }
+.food-toggle { display: flex; width: 100%; flex-direction: column; align-items: flex-start; border: 0; padding: 0; background: transparent; color: inherit; text-align: left; cursor: pointer; }
+.food-toggle:focus-visible { outline: 2px solid #6b5b40; outline-offset: 4px; }
+.food-number { position: absolute; top: 20px; right: 20px; color: #786a53; font-size: 8px; font-weight: 800; letter-spacing: .1em; }
+.food-image { width: 100%; height: 200px; flex: 0 0 200px; display: flex; align-items: center; justify-content: center; margin: 3px 0 16px; }
+.food-card img { width: 132px; height: 132px; margin: 0; border-radius: 50%; object-fit: cover; }
+.food-card img.sidra-image { height: 160px; border-radius: 0; object-fit: contain; }
+.food-card img.arroz-image { width: 260px; height: 200px; max-width: 100%; border-radius: 0; object-fit: contain; }
+.food-card img.cachopo-image { width: 260px; height: 200px; max-width: 100%; border-radius: 0; object-fit: contain; }
+.food-kicker { color: #71634b; font-size: 7px; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.food-toggle strong { margin-top: 3px; font-size: 19px; font-weight: 800; letter-spacing: -.05em; }
+.food-description { margin-top: 7px; color: #695e4c; font-size: 9px; line-height: 1.5; }
+.dance-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+.dance-image { position: relative; min-height: 400px; margin: 0; overflow: hidden; background: #292a27; }
+.dance-image img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .45s ease; }
+.dance-image:hover img { transform: scale(1.04); }
+.dance-image::after { position: absolute; inset: 45% 0 0; background: linear-gradient(transparent, rgb(0 0 0 / 55%)); content: ""; }
+.dance-image h3 { position: absolute; z-index: 1; right: 24px; bottom: 24px; left: 24px; margin: 0; color: #fff; font-size: clamp(24px, 3vw, 38px); font-weight: 800; letter-spacing: -.04em; text-shadow: 0 2px 12px rgb(0 0 0 / 35%); }
+.dance-notes { min-height: 400px; padding: 28px; display: flex; flex-direction: column; background: #234047; color: #e9e9df; }
+.dance-notes > p { margin: 0 0 22px; color: #d3dad4; font-size: 11px; line-height: 1.75; }
+.costume-notes { display: grid; gap: 16px; }
+.costume-notes > div + div { padding-top: 14px; border-top: 1px solid rgb(238 239 223 / 15%); }
+.costume-notes h3 { margin-bottom: 6px; color: #d9c99f; font-size: 8px; }
+.costume-notes p { margin: 0; color: #bdcbc6; font-size: 9px; line-height: 1.55; }
+.performance-link { display: flex; justify-content: space-between; align-items: center; margin-top: auto; padding: 11px 0 0; border-top: 1px solid rgb(238 239 223 / 27%); font-size: 7px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.performance-link b { margin-left: 12px; font-size: 13px; }
+.performance-link:hover { color: #e4d4a9; }
+
+.culture-notes { display: grid; grid-template-columns: repeat(3, 1fr); margin-top: 25px; }
+.culture-notes article { padding: 0 20px; border-left: 1px solid rgb(71 58 38 / 18%); }
+.culture-notes article:first-child { padding-left: 0; border-left: 0; }
+.culture-notes h3 { font-family: var(--sans); font-size: 12px; letter-spacing: -.01em; text-transform: none; }
+.culture-notes p { margin: 0; color: #655b4a; font-size: 9px; line-height: 1.55; }
+.site-footer { min-height: 80px; padding: 20px 6%; display: flex; align-items: center; justify-content: space-between; gap: 20px; background: var(--paper); color: #637073; font-size: 8px; }
+.footer-brand { color: var(--ink); font-size: 10px; font-weight: 800; letter-spacing: .14em; }
+.footer-brand span { margin-left: 6px; color: #66757a; font-size: 8px; font-weight: 500; }
+.site-footer a:hover { color: #182f34; }
+
+@media (min-width: 1600px) {
+  .content-width { width: min(1480px, 74%); }
+}
+
+@media (max-width: 900px) {
+  .content-width { width: calc(100% - 12%); }
+  .intro-grid { gap: 8%; }
+  .feature-grid { grid-template-columns: repeat(2, 1fr); }
+  .feature-card { height: 230px; }
+  .beach-row { gap: 24px; }
+  .image-map-link { width: 38%; }
+  .food-card { min-height: 285px; padding: 16px; }
+  .food-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .food-image { height: 180px; flex-basis: 180px; }
+  .food-card img { width: 112px; height: 112px; }
+  .food-card img.arroz-image { width: 230px; height: 180px; }
+  .food-card img.cachopo-image { width: 230px; height: 180px; }
+  .dance-image, .dance-notes { min-height: 360px; }
+  .dance-notes { padding: 22px; }
+}
+
+@media (max-width: 620px) {
+  .content-width { width: calc(100% - 40px); }
+  .hero { min-height: 0; height: auto; aspect-ratio: 1.35; }
+  .hero-art { width: 100%; height: 100%; object-fit: cover; object-position: center center; }
+  .hero-hotspots { display: none; }
+  .mobile-header { position: absolute; inset: 0 0 auto; z-index: 2; display: flex; height: 62px; align-items: center; justify-content: space-between; padding: 0 20px; background: rgb(17 33 37 / 82%); color: white; line-height: 1; }
+  .mobile-brand { font-size: 11px; font-weight: 800; letter-spacing: .15em; }
+  .mobile-brand span { margin-left: 4px; font-size: 8px; font-weight: 500; letter-spacing: .16em; }
+  .menu-toggle { display: inline-flex; align-items: center; gap: 10px; border: 0; padding: 10px 0; background: transparent; color: white; font-size: 9px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; cursor: pointer; }
+  .menu-icon { display: flex; width: 17px; flex-direction: column; gap: 5px; }
+  .menu-icon i { height: 1px; width: 100%; background: white; transition: transform .2s ease; }
+  .menu-toggle[aria-expanded="true"] .menu-icon i:first-child { transform: translateY(3px) rotate(45deg); }
+  .menu-toggle[aria-expanded="true"] .menu-icon i:last-child { transform: translateY(-3px) rotate(-45deg); }
+  .mobile-nav { position: absolute; inset: 62px 0 auto; display: flex; flex-direction: column; padding: 0 20px; overflow: hidden; max-height: 0; visibility: hidden; background: #122f35; transition: max-height .25s ease, padding .25s ease, visibility .25s; }
+  .mobile-nav.is-open { max-height: 260px; padding-block: 8px 16px; visibility: visible; }
+  .mobile-nav a { padding: 12px 0; border-bottom: 1px solid rgb(255 255 255 / 17%); font-size: 11px; }
+  .intro-grid { grid-template-columns: 1fr; gap: 20px; padding-bottom: 32px; }
+  .intro-heading h2 { font-size: 45px; }
+  .intro-copy { margin-top: 0; font-size: 12px; }
+  .city-facts { grid-template-columns: 1fr; gap: 20px; padding-top: 25px; padding-bottom: 36px; }
+  .city-facts article { max-width: none; }
+  .ways-heading { gap: 12px; align-items: end; }
+  .ways-heading .eyebrow { max-width: 220px; font-size: 7px; }
+  .ways-heading h2 { font-size: 25px; }
+  .ways-hint { max-width: 90px; text-align: right; line-height: 1.5; }
+  .feature-grid { gap: 9px; }
+  .feature-card { height: 190px; padding: 12px; }
+  .feature-title { min-height: 34px; font-size: 14px; }
+  .feature-meta { font-size: 6px; letter-spacing: .1em; }
+  .essential { min-height: 0; align-items: flex-start; flex-direction: column; padding: 22px; }
+  .essential-copy { font-size: 14px; }
+  .beaches-heading { grid-template-columns: 1fr; gap: 18px; padding-bottom: 26px; }
+  .beaches-heading h2 { font-size: 42px; }
+  .beaches-heading > p { font-size: 10px; }
+  .beach-row { grid-template-columns: 1fr; gap: 18px; padding: 22px 0; }
+  .beach-image-wrap { aspect-ratio: 1.42; }
+  .image-map-link { right: 2.5%; bottom: 6%; width: 46%; min-height: 24px; font-size: 6px; }
+  .beach-info h3 { margin-top: 14px; font-size: 27px; }
+  .beach-info > p { font-size: 10px; }
+  .beach-info .route-note { margin-block: 12px; font-size: 9px; }
+  .culture-heading { margin-bottom: 28px; }
+  .culture-heading h2 { font-size: 40px; }
+  .food-grid { grid-template-columns: 1fr; gap: 10px; }
+  .food-card { min-height: 245px; padding: 18px; }
+  .food-image { height: 175px; flex-basis: 175px; margin-top: 0; }
+  .food-card img { width: 118px; height: 118px; margin-top: 0; }
+  .food-card img.sidra-image { height: 145px; }
+  .food-card img.arroz-image { width: 230px; height: 175px; }
+  .food-card img.cachopo-image { width: 230px; height: 175px; }
+  .food-description { max-width: 260px; }
+  .dance-grid { grid-template-columns: 1fr; gap: 10px; margin-top: 18px; }
+  .dance-image { min-height: 300px; }
+  .dance-notes { min-height: 340px; padding: 20px; }
+  .dance-notes > p { font-size: 10px; }
+  .culture-notes { grid-template-columns: 1fr; gap: 16px; }
+  .culture-notes article, .culture-notes article:first-child { padding: 0 0 0 13px; border-left: 1px solid rgb(71 58 38 / 18%); }
+  .site-footer { align-items: flex-start; flex-direction: column; gap: 11px; padding-block: 24px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
+}

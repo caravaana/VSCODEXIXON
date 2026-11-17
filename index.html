@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#eee9de" />
+    <meta
+      name="description"
+      content="Descubre Xixón: playas, cultura asturiana, gastronomía y rutas para disfrutar del Cantábrico a tu ritmo."
+    />
+    <title>Xixón Asturias — Descubre la ciudad que mira al mar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="inicio" aria-labelledby="page-title">
+        <h1 class="visually-hidden" id="page-title">Xixón, Asturias</h1>
+        <img
+          class="hero-art"
+          src="assets/hero-xixon.jpg"
+          alt="Xixón junto al mar Cantábrico durante un temporal, con la iglesia de San Pedro entre las olas"
+          fetchpriority="high"
+        />
+        <nav class="hero-hotspots" aria-label="Navegación principal">
+          <a class="hotspot-brand" href="#inicio" aria-label="Xixón Asturias, inicio"></a>
+          <a class="hotspot-discover" href="#descubre" aria-label="Descubre Xixón"></a>
+          <a class="hotspot-beaches" href="#playas" aria-label="Playas de Xixón"></a>
+          <a class="hotspot-culture" href="#cultura" aria-label="Cultura asturiana"></a>
+          <a class="hotspot-agenda" href="#agenda" aria-label="Agenda cultural"></a>
+          <a class="hotspot-visit" href="#agenda" aria-label="Planea tu visita"></a>
+        </nav>
+        <div class="mobile-header">
+          <a href="#inicio" class="mobile-brand">XIXÓN <span>ASTURIAS</span></a>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav">
+            <span>Menú</span>
+            <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+          </button>
+          <nav class="mobile-nav" id="mobile-nav" aria-label="Navegación móvil">
+            <a href="#descubre">Descubre</a>
+            <a href="#playas">Playas</a>
+            <a href="#cultura">Cultura</a>
+            <a href="#agenda">Agenda</a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="introduction paper-section" id="descubre">
+        <div class="intro-grid content-width">
+          <div class="intro-heading">
+            <p class="eyebrow">Descubre Xixón</p>
+            <h2>Una ciudad<br />que vive<br />mirando al mar.</h2>
+          </div>
+          <p class="intro-copy">
+            Xixón es una ciudad atlántica, cercana y vivible. Combina la energía de su costa con
+            barrios tranquilos, cultura, gastronomía y una fuerte identidad asturiana. Aquí el
+            ritmo urbano convive con la playa y la naturaleza.
+          </p>
+        </div>
+
+        <div class="city-facts content-width">
+          <article>
+            <h3>Dónde está</h3>
+            <p>En la costa central de Asturias, al norte de España, frente al mar Cantábrico y a unos 30 minutos de Oviedo.</p>
+          </article>
+          <article>
+            <h3>Cómo se vive</h3>
+            <p>A pie, sin prisas y mucho al aire libre. Es compacta, acogedora y activa durante todo el año.</p>
+          </article>
+          <article>
+            <h3>Cuándo venir</h3>
+            <p>El verano trae playa y festivales; primavera y otoño ofrecen luz suave, menos gente y paisajes intensamente verdes.</p>
+          </article>
+        </div>
+
+        <div class="ways content-width">
+          <div class="ways-heading">
+            <div>
+              <p class="eyebrow">Cuatro formas de descubrirla</p>
+              <h2>Toca para descubrir</h2>
+            </div>
+            <span class="ways-hint">Selecciona una tarjeta <span aria-hidden="true">↘</span></span>
+          </div>
+
+          <div class="feature-grid">
+            <a class="feature-card feature-sea" href="#playas">
+              <img src="assets/Captura%20de%20pantalla%202026-11-03%20a%20las%2013.01.02.png" alt="" loading="lazy" />
+              <span class="feature-meta"><span>01</span> Paseo y playa</span>
+              <span class="feature-title">Vivir el mar</span>
+              <span class="feature-link">Ver historia <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="feature-card feature-city" href="#cultura">
+              <img src="assets/cimavilla.jpg" alt="" loading="lazy" />
+              <span class="feature-meta"><span>02</span> Barrio antiguo</span>
+              <span class="feature-title">Caminar Cimavilla</span>
+              <span class="feature-link">Ver historia <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="feature-card feature-food" href="#cultura">
+              <img src="assets/comer-asturiana.jpg" alt="" loading="lazy" />
+              <span class="feature-meta"><span>03</span> Recetas de aquí</span>
+              <span class="feature-title">Comer a la asturiana</span>
+              <span class="feature-link">Ver historia <span aria-hidden="true">↗</span></span>
+            </a>
+            <a class="feature-card feature-nature" href="#playas">
+              <img src="assets/La%20n%CC%83ora.png" alt="" loading="lazy" />
+              <span class="feature-meta"><span>04</span> Paisaje cercano</span>
+              <span class="feature-title">Explorar la costa</span>
+              <span class="feature-link">Ver historia <span aria-hidden="true">↗</span></span>
+            </a>
+          </div>
+        </div>
+
+        <aside class="essential content-width">
+          <div>
+            <p class="eyebrow">Lo esencial</p>
+            <p class="essential-copy">Camina el Muro, sube a Cimavilla, prueba la sidra y reserva tiempo para mirar el mar.</p>
+          </div>
+          <a class="pill pill-outline" href="#inicio">Volver al inicio <span aria-hidden="true">↑</span></a>
+        </aside>
+      </section>
+
+      <section class="beaches" id="playas">
+        <div class="beaches-inner content-width">
+          <div class="beaches-heading">
+            <div>
+              <p class="eyebrow">Playas de Xixón</p>
+              <h2>Del paseo urbano a<br />la cala salvaje.</h2>
+            </div>
+            <p>Cuatro formas de acercarse al Cantábrico sin alejarse de Xixón. Pulsa cualquier fotografía para ver la pantalla completa y utiliza el mapa para llegar directamente.</p>
+          </div>
+
+          <div class="beach-list">
+            <article class="beach-row">
+              <div class="beach-image-wrap">
+                <img src="assets/Captura%20de%20pantalla%202026-11-03%20a%20las%2013.03.08.png" alt="Playa de San Lorenzo con la iglesia de San Pedro al fondo" loading="lazy" />
+                <a class="image-map-link" href="assets/Captura%20de%20pantalla%202026-11-03%20a%20las%2013.03.08.png" target="_blank" rel="noreferrer">Ver a pantalla completa <span aria-hidden="true">↗</span></a>
+              </div>
+              <div class="beach-info">
+                <div class="beach-label"><span>Centro de Xixón</span><span>01</span></div>
+                <h3>San Lorenzo</h3>
+                <p>La gran playa urbana de la ciudad, reconocible por su larga bahía y la escalera de La Escalerona. Ideal para pasear, nadar o iniciarse en el surf.</p>
+                <p class="route-note">Ruta: recorre el paseo del Muro desde San Pedro hasta el río Piles, un trayecto llano de unos 3 km.</p>
+                <a class="pill map-pill" href="https://www.google.com/maps/search/?api=1&query=Playa+de+San+Lorenzo+Gijon" target="_blank" rel="noreferrer">Abrir en Google Maps <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="beach-row">
+              <div class="beach-image-wrap">
+                <img src="assets/Captura%20de%20pantalla%202026-11-03%20a%20las%2013.01.02.png" alt="Playa de Poniente y su bahía en Xixón" loading="lazy" />
+                <a class="image-map-link" href="assets/Captura%20de%20pantalla%202026-11-03%20a%20las%2013.01.02.png" target="_blank" rel="noreferrer">Ver a pantalla completa <span aria-hidden="true">↗</span></a>
+              </div>
+              <div class="beach-info">
+                <div class="beach-label"><span>Puerto deportivo</span><span>02</span></div>
+                <h3>Poniente</h3>
+                <p>Una playa resguardada, familiar y muy accesible junto al acuario y el puerto. Sus aguas suelen ser más tranquilas que las de San Lorenzo.</p>
+                <p class="route-note">Ruta: llega caminando desde Cimavilla por el puerto deportivo; el paseo marítimo es llano y dura unos 20 minutos.</p>
+                <a class="pill map-pill" href="https://www.google.com/maps/search/?api=1&query=Playa+de+Poniente+Gijon" target="_blank" rel="noreferrer">Abrir en Google Maps <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+
+            <article class="beach-row">
+              <div class="beach-image-wrap">
+                <img src="assets/La%20n%CC%83ora.png" alt="Playa de La Ñora bajo acantilados verdes" loading="lazy" />
+                <a class="image-map-link" href="assets/La%20n%CC%83ora.png" target="_blank" rel="noreferrer">Ver a pantalla completa <span aria-hidden="true">↗</span></a>
+              </div>
+              <div class="beach-info">
+                <div class="beach-label"><span>Límite con Villaviciosa</span><span>03</span></div>
+                <h3>La Ñora</h3>
+                <p>Una pequeña playa de arena rodeada de laderas verdes, a pocos kilómetros de la ciudad. Tiene ambiente natural y buenos servicios en verano.</p>
+                <p class="route-note">Ruta: la senda de la Ñora baja desde Quintueles entre bosque y molinos hasta la playa, cuesta abajo y sin prisas.</p>
+                <a class="pill map-pill" href="https://www.google.com/maps/search/?api=1&query=Playa+de+La+%C3%91ora+Asturias" target="_blank" rel="noreferrer">Abrir en Google Maps <span aria-hidden="true">↗</span></a>
+              </div>
+            </article>
+          </div>
+          <p class="beaches-footnote">La costa cambia con las mareas. Consulta el estado del mar antes de acercarte a las calas y disfruta siempre con cuidado.</p>
+        </div>
+      </section>
+
+      <section class="culture" id="cultura">
+        <div class="culture-inner content-width">
+          <div class="culture-heading">
+            <p class="eyebrow">Cultura asturiana</p>
+            <h2>Cultura que se come, se<br />baila y se comparte.</h2>
+            <p>En Xixón la identidad aparece alrededor de una mesa, en una romería o al escuchar una gaita. Acércate a descubrir y usa cada plato para conocer su historia.</p>
+          </div>
+
+          <div class="food-grid">
+            <article class="food-card">
+              <button class="food-toggle" type="button" aria-expanded="false" aria-controls="food-description-fabada">
+                <span class="food-number">01</span>
+                <span class="food-image"><img src="assets/fabada.png" alt="" loading="lazy" /></span>
+                <span class="food-kicker">El gran guiso</span>
+                <strong>Fabada</strong>
+              </button>
+              <p class="food-description" id="food-description-fabada" hidden>Elaborado con fabes de la Granja, cocidas a fuego lento junto al compango. Su caldo destaca por una textura trabada e intensa.</p>
+            </article>
+            <article class="food-card">
+              <button class="food-toggle" type="button" aria-expanded="false" aria-controls="food-description-sidra">
+                <span class="food-number">02</span>
+                <span class="food-image"><img class="sidra-image" src="assets/botella%20de%20sidra.png" alt="" loading="lazy" /></span>
+                <span class="food-kicker">Todo un ritual</span>
+                <strong>Sidra natural</strong>
+              </button>
+              <p class="food-description" id="food-description-sidra" hidden>Una bebida alcohólica tradicional y social hecha de manzana mayada, sin gas ni azúcares añadidos, que se escancia y se bebe al momento en culines.</p>
+            </article>
+            <article class="food-card">
+              <button class="food-toggle" type="button" aria-expanded="false" aria-controls="food-description-arroz">
+                <span class="food-number">03</span>
+                <span class="food-image"><img class="arroz-image" src="assets/arroz-leche.png" alt="" loading="lazy" /></span>
+                <span class="food-kicker">Final feliz</span>
+                <strong>Arroz con leche</strong>
+              </button>
+              <p class="food-description" id="food-description-arroz" hidden>Cremoso, aromático con canela y caramelo, y terminado con una fina capa de azúcar quemada.</p>
+            </article>
+            <article class="food-card">
+              <button class="food-toggle" type="button" aria-expanded="false" aria-controls="food-description-cachopo">
+                <span class="food-number">04</span>
+                <span class="food-image"><img class="cachopo-image" src="assets/cachopo.png" alt="" loading="lazy" /></span>
+                <span class="food-kicker">Un clásico asturiano</span>
+                <strong>Cachopo</strong>
+              </button>
+              <p class="food-description" id="food-description-cachopo" hidden>Compuesto por dos filetes de ternera grandes que envuelven un relleno de jamón serrano y queso, empanados y fritos.</p>
+            </article>
+          </div>
+
+          <div class="dance-grid" id="agenda">
+            <figure class="dance-image">
+              <img src="assets/baile%20regional.png" alt="Personas con trajes tradicionales asturianos bailando en Xixón" loading="lazy" />
+              <h3>El baile regional</h3>
+            </figure>
+            <article class="dance-notes">
+              <p>Los bailes tradicionales asturianos son colectivos y enérgicos. La danza prima reúne a los participantes en un círculo; otros bailes, como el corríu y la jota asturiana, combinan pasos, giros y el ritmo de la gaita y el tambor.</p>
+              <div class="costume-notes">
+                <div>
+                  <h3>Traje de mujer</h3>
+                  <p>Falda larga, mandil, camisa blanca, corpiño ajustado, pañuelo y dengüe sobre los hombros.</p>
+                </div>
+                <div>
+                  <h3>Traje de hombre</h3>
+                  <p>Camisa blanca, chaleco, calzón corto, faja y monteras picones, el sombrero más reconocible de estas celebraciones.</p>
+                </div>
+              </div>
+              <a class="performance-link" href="https://www.youtube.com/results?search_query=baile+tradicional+asturiano+danza+prima" target="_blank" rel="noreferrer">
+                <span>Ver una actuación</span><span>Play <b aria-hidden="true">↗</b></span>
+              </a>
+            </article>
+          </div>
+
+          <div class="culture-notes">
+            <article>
+              <h3>La gaita</h3>
+              <p>El sonido que acompaña bailes, procesiones y celebraciones.</p>
+            </article>
+            <article>
+              <h3>La llingua</h3>
+              <p>El asturiano sigue vivo en la música, la literatura y la conversación.</p>
+            </article>
+            <article>
+              <h3>La romería</h3>
+              <p>Fiesta popular al aire libre: música, baile, comida y comunidad.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="#inicio" class="footer-brand">XIXÓN <span>ASTURIAS</span></a>
+      <a href="#descubre">Una ciudad que mira al mar <span aria-hidden="true">↑</span></a>
+      <span>Gijón · Asturias · España</span>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
